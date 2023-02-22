@@ -1,0 +1,76 @@
+
+/* Estilos CSS */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+#Principal{
+  background-color: rgb(248, 5, 5); /*blanco celeste*/
+}
+
+#cajaNombre{
+  background-color: rgb(248, 244, 9); /*blanco celeste*/
+}
+
+#Nombre{
+  background-color: rgb(35, 146, 7); /*blanco celeste*/
+}
+
+#user-info{
+  background-color: rgb(0, 162, 255); /*azul*/
+  
+  display: flex;  
+  justify-content: center;
+}
+/*#cajaImagen{
+  background-color: rgb(0, 162, 255); /*azul
+  
+  display: flex;  
+  justify-content: center;
+                                                  ESTO ANDA BIEN
+}
+
+#imagen{
+  float: left;
+}*/
+
+#texto{
+  background-color: rgb(4, 58, 158);
+  float: right;        /*celeste*/
+}
+
+/*#cajaSociales{
+  background-color: rgb(2, 0, 5);         ESTO ANDABA BIEN CREO QUE YA NO LO NECESITO
+ 
+   celeste
+} */
+
+#cajaIconos{
+  background-color: rgb(207, 207, 236);
+
+  
+}
+
+.icon-container {
+  text-align: center;
+}
+
+.icon-container i {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+
+#iconos{
+  background-color: beige;
+  display: flex;
+  justify-content: center; 
+}
+
+#cajaSaludo{
+  background-color: rgb(238, 6, 134); /*celeste*/
+}
+

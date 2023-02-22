@@ -1,0 +1,91 @@
+<!--!DOCTYPE <html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi CV</h1>
+    
+    <section>
+      <h2>Datos personales</h2>
+      <p>Nombre: Juan Pérez</p>
+      <p>Correo electrónico: juanperez@email.com</p>
+      <p>Teléfono: 1234567890</p>
+    </section>
+    
+    <section>
+      <h2>Experiencia laboral</h2>
+      <ul>
+        <li>
+          <h3>Desarrollador web</h3>
+          <p>Empresa A</p>
+          <p>Fecha: 2020 - actualidad</p>
+          <ul>
+            <li>Desarrollo de aplicaciones web con HTML, CSS y JavaScript.</li>
+            <li>Colaboración en proyectos en equipo.</li>
+     </ul>
+     <section>
+</body>
+</html> 
+
+
+<!DOCTYPE html>                            
+<html>
+  <head>
+    <title>Random User Example</title>
+  </head>
+  <body>
+    <div id="user-info">
+      <p>Loading user data...</p>
+    </div>
+    <script>
+      fetch('https://randomuser.me/api/')
+        .then(response => response.json())
+        .then(data => {
+          const user = data.results[0];
+          const userInfo = document.getElementById('user-info');
+          userInfo.innerHTML = `
+           <img src="${user.picture.large}" alt="User picture">
+            <p>Name: ${user.name.first} ${user.name.last}</p>
+            <p>Email: ${user.email}</p>
+            
+          `;
+        })
+        .catch(error => {
+          console.error('Error fetching user data:', error);
+        });
+    </script>
+  </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random User Example</title>
+  </head>
+  <body>
+    <div id="user-info">
+      <p>Loading user data...</p>
+    </div>
+    <script>
+      fetch('https://randomuser.me/api/')
+        .then(response => response.json())
+        .then(data => {
+          const user = data.results[0];
+          const userInfo = document.getElementById('user-info');
+          userInfo.innerHTML = `
+            <p>Name: ${user.name.first} ${user.name.last}</p>
+            <p>Email: ${user.email}</p>
+            <img src="${user.picture.large}" alt="User picture">
+          `;
+        })
+        .catch(error => {
+          console.error('Error fetching user data:', error);
+        });
+    </script>
+  </body>
+</html>

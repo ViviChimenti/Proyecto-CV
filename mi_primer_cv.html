@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer CV</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c04aeec802.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+  <div id="Principal">  <!--color blanco celeste -->
+
+    <div id="cajaNombre">                <!--color blanco celeste -->
+        <div id="Nombre"> <!--color blanco celeste -->
+          <h1>Nombre</h1>
+        </div>
+    </div>  
+
+    <div id="user-info">
+      <p>Loading user data...</p>
+    </div>
+    <script>
+      fetch('https://randomuser.me/api/')
+        .then(response => response.json())
+        .then(data => {
+          const user = data.results[0];
+          const userInfo = document.getElementById('user-info');
+          userInfo.innerHTML = `
+            <img src="${user.picture.large}" alt="User picture">
+            <p>Name: ${user.name.first} ${user.name.last}.<br>
+            Email: ${user.email}.</p>
+            
+          `;
+        })
+        .catch(error => {
+          console.error('Error fetching user data:', error);
+        });
+    </script>
+
+    <!--<div id="cajaImagen">   **color azul  
+        <div id="imagen">
+          <img src="mi_imagen.jpeg" alt="Mi imagen">        ** foto 
+        </div>
+
+        <div id="texto">  **color celeste          
+          <h2>Aca van los datos personales</h2>     **texto 
+        </div>   
+    </div>  ESTO ANDA BIEN -->
+  
+     <!--<div id="cajaSociales">     color celeste  
+      <div id="iconos">
+        <a href="https://www.linkedin.com"><img src="linkedin.svg" alt="www.linkedin.com" width="24" height="24"  > </a>
+      </div>
+    </div>-->
+    <div id="cajaIconos">
+     <div class="icon-container">
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>                  
+      <a href="https://www.twitter.com" target="_blank">
+        <i class="fa-brands fa-square-twitter"></i>
+      </a> 
+      </div> 
+      <div>  
+
+    <div id="cajaSaludo">   <!--color celeste -->  
+          <div>
+            <h2>Acá va la presentacion txt</h2>
+          </div>
+    </div>
+
+  <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- </div>  
+    <nav>
+        <div> 
+          <ul>
+            <li><a href="#Experiencia">Experiencia</a></li>
+            <li><a href="#Formación">Formación</a></li>
+            <li><a href="#Clientes">Clientes</a></li>
+            <li><a href="#Aptitudes">Aptitudes</a></li>
+          </ul>
+        </div>
+      </nav>
+  <div>  
+   -->  
+    
+<!-- <div id="Experiencia">
+        <h2>Experiencia</h2>
+        <p>Contenido de la sección 1</p>
+      </div>
+      
+      <div id="Formación">
+        <h2>Formación</h2>
+        <p>Contenido de la sección 2</p>
+      </div>
+      
+      <div id="Clientes">
+        <h2>Clientes</h2>
+        <p>Contenido de la sección 3</p>
+      </div>
+
+      <div id="Aptitudes">
+        <h2>Aptitudes</h2>
+        <p>Contenido de la sección 4</p>
+      </div>
+  -->    
+
+</body>
+</html>
