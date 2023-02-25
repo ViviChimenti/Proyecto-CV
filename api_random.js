@@ -14,15 +14,14 @@ function datos() {
           const userInfo = document.getElementById('user-info');
           userInfo.innerHTML = 
           `
-          
-          <div id="imagen"><img src="${user.picture.large}" alt="User picture"></div>
+          <div id="imagen_div" ><img id="foto" src="${user.picture.large}" alt="User picture" ></div>
           <div id="info">
           <div><p><br> ${user.name.first} ${user.name.last}<br>Desarrollador<p></div>
           <div><p>Email:<br> ${user.email}<p></div>
           <div><p>Teléfono:<br> ${user.email}<p></div>
           <div><p>Fecha de nacimiento:<br> ${user.dob.date}<p></div></div>
-          
         `;
+         document.getElementById("nombre_h1").innerText=user.name.first +"  "+user.name.last;
         })
         .catch(error => {
           console.error('Error fetching user data:', error);

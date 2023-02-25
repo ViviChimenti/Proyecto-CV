@@ -19,9 +19,11 @@ body {
   background-color: rgb(35, 146, 7); /*blanco celeste*/
 }
 
-#imagen{
-  display: flex;  
+#imagen_div{
+  box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+  /* display: flex; */  
   justify-content: center;
+  background-color: blueviolet;
 } 
 
 #user-info{
@@ -29,7 +31,9 @@ body {
   
   display: flex;  
   justify-content: center;
+  
 }
+
 /*#cajaImagen{
   background-color: rgb(0, 162, 255); /*azul
   
@@ -43,15 +47,21 @@ body {
 }*/
 
 #info{
-  background-color: coral;
-
+  background-color: #f1f1f1;
+  box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+  
 }
 
 #texto{
   background-color: rgb(4, 58, 158);
   float: right;        /*celeste*/
+  
 }
 
+#foto{
+  height: 470px;
+  width: 470px;
+}
 #cajaIconos{
   background-color: rgb(207, 207, 236); 
 }

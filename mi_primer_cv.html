@@ -15,46 +15,15 @@
 
     <div id="cajaNombre">                <!--color blanco celeste -->
         <div id="Nombre"> <!--color blanco celeste -->
-          <h1>Nombre</h1>
+          <h1 id="nombre_h1">Nombre</h1>
         </div>
     </div>  
 
     <div id="user-info">
       <p>Loading user data...</p>
+      
     </div>
-    <!-- <script>
-      fetch('https://randomuser.me/api/')
-        .then(response => response.json())
-        .then(data => {
-          const user = data.results[0];
-          const userInfo = document.getElementById('user-info');
-          userInfo.innerHTML = `
-            <img src="${user.picture.large}" alt="User picture">
-            <p>Name: ${user.name.first} ${user.name.last}.<br>
-            Email: ${user.email}.</p>
-            
-          `;
-        })
-        .catch(error => {
-          console.error('Error fetching user data:', error);
-        });
-    </script> -->
-
-    <!--<div id="cajaImagen">   **color azul  
-        <div id="imagen">
-          <img src="mi_imagen.jpeg" alt="Mi imagen">        ** foto 
-        </div>
-
-        <div id="texto">  **color celeste          
-          <h2>Aca van los datos personales</h2>     **texto 
-        </div>   
-    </div>  ESTO ANDA BIEN -->
-  
-     <!--<div id="cajaSociales">     color celeste  
-      <div id="iconos">
-        <a href="https://www.linkedin.com"><img src="linkedin.svg" alt="www.linkedin.com" width="24" height="24"  > </a>
-      </div>
-    </div>-->
+    
     <div id="cajaIconos">
      <div class="icon-container">
       <a href="https://www.linkedin.com" target="_blank">
