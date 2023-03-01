@@ -8,7 +8,7 @@ body {
 }
 
 #Principal{
-  background-color: rgb(248, 5, 5); /*blanco celeste*/
+  background-color: #f1f1f1; /*blanco celeste 
 }
 
 #cajaNombre{
@@ -16,45 +16,36 @@ body {
 }
 
 #Nombre{
-  background-color: rgb(35, 146, 7); /*blanco celeste*/
+  box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+  display:flex;
+  justify-content: left; 
+  background-color: #f1f1f1;
+}
+
+#nombre_h1 {
+  color: #182153;
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+#div_header{
+  display:flex;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  color: #182153;
 }
 
 #imagen_div{
   box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
   /* display: flex; */  
   justify-content: center;
-  background-color: blueviolet;
+  background-color: #182153;
 } 
 
 #user-info{
-  background-color: rgb(0, 162, 255); /*azul*/
-  
+  background-color: #0f1534; /*azul*/
   display: flex;  
   justify-content: center;
-  
-}
-
-/*#cajaImagen{
-  background-color: rgb(0, 162, 255); /*azul
-  
-  display: flex;  
-  justify-content: center;
-                                                  ESTO ANDA BIEN
-}
-
-#imagen{
-  float: left;
-}*/
-
-#info{
-  background-color: #f1f1f1;
-  box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
-  
-}
-
-#texto{
-  background-color: rgb(4, 58, 158);
-  float: right;        /*celeste*/
   
 }
 
@@ -62,27 +53,182 @@ body {
   height: 470px;
   width: 470px;
 }
-#cajaIconos{
-  background-color: rgb(207, 207, 236); 
+
+#info_div{
+  background-color: #f1f1f1;
+  box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+  height: 470px;
+  width: 470px;
 }
 
-.icon-container {
+#texto{
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 50px;
+}
+
+
+.class-Nombre{
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.icon-container{
   text-align: center;
+  background-color:#182153;
+  width: 50%;
+  height: 40px; 
+  margin: 0 auto;
+  width: 940px;  
 }
 
-.icon-container i {
-  display: inline-block;
-  margin: 0 5px;
+#cajaIconos{
+  background-color: #f1f1f1;
 }
 
-
-#iconos{
-  background-color: beige;
-  display: flex;
-  justify-content: center; 
+a{
+  color: #182153;
+  margin: 10px;
 }
 
 #cajaSaludo{
-  background-color: rgb(238, 6, 134); /*celeste*/
+  background-color: #f1f1f1; 
+  margin: 3%;
 }
+
+h2{
+  background-color: #f1f1f1;
+  color: #182153;
+  text-align: center;
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+h3{
+  background-color: #f1f1f1;
+  color: #182153;
+  text-align: center;
+  font-size: 18px;
+  width: 50%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color:#182153;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+ 
+.experiencia_css{
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+
+#Experiencia_titulo{
+  background-color: #FFFFFF;
+  box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+  
+}
+
+#c1{
+  background-color: #FFFFFF;
+  height: 170px;
+  width: 470px;
+}
+
+ #c2{
+  background-color: #FFFFFF;
+  height: 170px;
+  width: 470px;
+ }  
+
+#c1_h{
+  text-align: right;
+  margin: 20px;
+  color: #182153;
+}
+
+#c2_h{
+  text-align: left;
+  margin: 20px;
+  color: #182153;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px #ccc;
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="button"] {
+  background-color: #3e8e41;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 520px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#barra{
+  background-color:#FFFFFF;
+  color:#FFFFFF
+}
+
+#Contacto{
+  background-color:#182153;
+}
+
 

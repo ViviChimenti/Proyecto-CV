@@ -15,13 +15,28 @@ function datos() {
           userInfo.innerHTML = 
           `
           <div id="imagen_div" ><img id="foto" src="${user.picture.large}" alt="User picture" ></div>
-          <div id="info">
-          <div><p><br> ${user.name.first} ${user.name.last}<br>Desarrollador<p></div>
-          <div><p>Email:<br> ${user.email}<p></div>
-          <div><p>Teléfono:<br> ${user.email}<p></div>
-          <div><p>Fecha de nacimiento:<br> ${user.dob.date}<p></div></div>
+
+          <div id="info_div">
+            <div id="texto">
+                <div>
+                    <p><span style="color: #182153; font-size: 30px; font-weight: bold;"> ${user.name.first} ${user.name.last} </span><br /><span style="color: #182153;font-size: 20px; font-weight: bold;">Desarrollador</span><p>
+                </div>
+                <div>
+                    <p><span style="color: #182153;font-weight: bold;">Email</span><br> ${user.email}<p>
+                </div>
+                <div>
+                    <p><span style="color: #182153;font-weight: bold;">Teléfono:</span><br> ${user.cell}<p>
+                </div>
+                <div>
+                    <p><span style="color: #182153;font-weight: bold;">Dirección:</span><br> ${user.location.street.name} ${user.location.street.number}<p>
+                </div>
+                <div>
+                    <p><span style="color: #182153;font-weight: bold;">Edad:</span><br> ${user.dob.age}<p>
+                </div>
+            </div>   
+          </div>
         `;
-         document.getElementById("nombre_h1").innerText=user.name.first +"  "+user.name.last;
+         document.getElementById("nombre_h1").innerText= user.name.first +"  "+user.name.last;
         })
         .catch(error => {
           console.error('Error fetching user data:', error);
