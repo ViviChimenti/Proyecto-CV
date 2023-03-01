@@ -11,123 +11,188 @@
   </head>
 
 <body>
-  <div id="Principal">  <!--color blanco celeste -->
+  
+  <div id="Principal"> 
 
-    <div id="cajaNombre">                <!--color blanco celeste -->
-        <div id="Nombre"> <!--color blanco celeste -->
-          <h1>Nombre</h1>
-        </div>
+    <div id="cajaNombre">                
+      <div id="Nombre"> 
+        <h1 id="nombre_h1" class="class-Nombre">Nombre</h1>
+        
+        <div id="div_header">
+          <header>
+            <nav>
+              <ul>
+                <li><a href="#Experiencia">EXPERIENCIA</a></li>
+                <li><a href="#Formación">FORMACIÓN</a></li>
+                <li><a href="#Aptitudes">APTITUDES</a></li>
+                <li><a href="#Contacto">CONTACTO</a></li>
+              </ul>
+            </nav>  
+          <header>
+        </div>   
+      </div>
     </div>  
-
+    
     <div id="user-info">
       <p>Loading user data...</p>
-    </div>
-    <!-- <script>
-      fetch('https://randomuser.me/api/')
-        .then(response => response.json())
-        .then(data => {
-          const user = data.results[0];
-          const userInfo = document.getElementById('user-info');
-          userInfo.innerHTML = `
-            <img src="${user.picture.large}" alt="User picture">
-            <p>Name: ${user.name.first} ${user.name.last}.<br>
-            Email: ${user.email}.</p>
-            
-          `;
-        })
-        .catch(error => {
-          console.error('Error fetching user data:', error);
-        });
-    </script> -->
-
-    <!--<div id="cajaImagen">   **color azul  
-        <div id="imagen">
-          <img src="mi_imagen.jpeg" alt="Mi imagen">        ** foto 
-        </div>
-
-        <div id="texto">  **color celeste          
-          <h2>Aca van los datos personales</h2>     **texto 
-        </div>   
-    </div>  ESTO ANDA BIEN -->
-  
-     <!--<div id="cajaSociales">     color celeste  
-      <div id="iconos">
-        <a href="https://www.linkedin.com"><img src="linkedin.svg" alt="www.linkedin.com" width="24" height="24"  > </a>
-      </div>
-    </div>-->
-    <div id="cajaIconos">
-     <div class="icon-container">
-      <a href="https://www.linkedin.com" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="https://www.instagram.com" target="_blank">
-        <i class="fa-brands fa-square-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-      </a>                  
-      <a href="https://www.twitter.com" target="_blank">
-        <i class="fa-brands fa-square-twitter"></i>
-      </a> 
-      </div> 
-    <div>  
-
-    <div id="cajaSaludo">   <!--color celeste -->  
-          <div>
-            <h2>Acá va la presentacion txt</h2>
-          </div>
-    </div>
-
-  <div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <!-- </div>  
-    <nav>
-        <div> 
-          <ul>
-            <li><a href="#Experiencia">Experiencia</a></li>
-            <li><a href="#Formación">Formación</a></li>
-            <li><a href="#Clientes">Clientes</a></li>
-            <li><a href="#Aptitudes">Aptitudes</a></li>
-          </ul>
-        </div>
-      </nav>
-  <div>  
-   -->  
+  </div>
     
-<!-- <div id="Experiencia">
-        <h2>Experiencia</h2>
-        <p>Contenido de la sección 1</p>
+    <div id="cajaIconos">
+      <div class="icon-container">
+        <a href="https://linkedin.com">
+                <img src="pngegg (16).png" alt="Descripción de la imagen">
+        </a>
+        <a href="https://twitter.com">
+          <img src="pngegg (15).png" alt="Descripción de la imagen">
+        </a>
+        <a href="https://facebook.com">
+          <img src="pngegg (14).png" alt="Descripción de la imagen">
+        </a>
+        <a href="https://instagram.com">
+          <img src="pngegg (13).png" alt="Descripción de la imagen">
+        </a>
+      </div> 
+    </div>  
+    <br>
+    <div id="cajaSaludo">  
+      <div>
+        <h2>¡Hola!</h2>
       </div>
-      
-      <div id="Formación">
-        <h2>Formación</h2>
-        <p>Contenido de la sección 2</p>
+      <br>
+      <div>  
+        <h3>Soy un desarrollador con habilidades en varias tecnologías de programación y experiencia trabajando en proyectos tanto de front-end como de back-end. Mi objetivo profesional es seguir desarrollando mis habilidades y conocimientos para poder enfrentar nuevos desafíos y aportar soluciones innovadoras en el desarrollo de aplicaciones web y móviles.</h3>
       </div>
-      
-      <div id="Clientes">
-        <h2>Clientes</h2>
-        <p>Contenido de la sección 3</p>
+      <br>    
+    </div>
+    
+    <div><p id="barra">. </p></div>
+
+    <div id="Experiencia">
+      <h2 id="Experiencia_titulo">EXPERIENCIA</h2>
+
+      <div id="Experiencia_1" class="experiencia_css">
+        <div id="c1">
+          <h4 id="c1_h">Julio 2021 - Presente</h4>
+          <h5 id="c1_h">Desarrollador Full-Stack</h5>
+        </div>
+        
+        <div id="c2">
+          <h4 id="c2_h">ABC COMPANY</h4>
+          <li id="c2_h">Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías como React, Node.js y MongoDB.
+          Participación en el diseño y la implementación de nuevas funcionalidades y características.
+          Colaboración con un equipo de desarrollo para mejorar la calidad del software.</li>
+        </div>
       </div>
 
-      <div id="Aptitudes">
-        <h2>Aptitudes</h2>
-        <p>Contenido de la sección 4</p>
+      <div id="Experiencia_2" class="experiencia_css">
+        <div id="c1">
+          <h4 id="c1_h">Agosto 2018 - Abril 2020</h4>
+          <h5 id="c1_h">Ingeniero de Software</h5>
+        </div>
+        
+        <div id="c2">
+          <h4 id="c2_h">XYZ CORPORATION</h4>
+          <li id="c2_h">Desarrollo de software de back-end utilizando Java y Spring Framework.
+            Diseño y mantenimiento de bases de datos relacionales utilizando MySQL y PostgreSQL.</li>
+        </div>
       </div>
-  -->    
+
+      <div id="Experiencia_3" class="experiencia_css">
+        <div id="c1">
+          <h4 id="c1_h">Enero 2016 - Julio 2018</h4>
+          <h5 id="c1_h">Desarrollador Front-End</h5>
+        </div>
+        
+        <div id="c2">
+          <h4 id="c2_h">123 AGENCY</h4>
+          <li id="c2_h">Creación de interfaces de usuario responsivas utilizando HTML, CSS y JavaScript.
+            Integración de diseños de UI/UX en aplicaciones web utilizando herramientas como Bootstrap y jQuery.</li>
+        </div>
+      </div>
+    </div>
+       
+    <div id="Formación">
+      <h2 id="Experiencia_titulo">FORMACIÓN</h2>
+
+      <div id="Experiencia_1" class="experiencia_css">
+        <div id="c1">
+          <h4 id="c1_h">Julio 2018 - 2020</h4>
+          <h5 id="c1_h">Full Stack Developer</h5>
+        </div>
+        
+        <div id="c2">
+          <h4 id="c2_h">HENRY</h4>
+          <li id="c2_h">Capacitación para un perfil híbrido en el ámbito del desarrollo web, tanto en el front-end como en el back-end de un proyecto.</li>
+        </div>
+      </div>
+
+      <div id="Experiencia_2" class="experiencia_css">
+        <div id="c1">
+          <h4 id="c1_h">Agosto 2017 - Abril 2018</h4>
+          <h5 id="c1_h">Phyton Avanzado</h5>
+        </div>
+        
+        <div id="c2">
+          <h4 id="c2_h">DEVOON</h4>
+          <li id="c2_h"> Programación orientada a objetos, programación imperativa y programación funcional. Experto en Programación Web</li>
+        </div>
+      </div>
+
+      <div id="Experiencia_3" class="experiencia_css">
+        <div id="c1">
+          <h4 id="c1_h">Enero 2010 - Julio 2017</h4>
+          <h5 id="c1_h">Ingeniería Informática</h5>
+        </div>
+        
+        <div id="c2">
+          <h4 id="c2_h">UNIVERSIDAD DE OVIEDO</h4>
+          <li id="c2_h"> Fundamentos de la ciencia de la computación, la ingeniería en computadores, la ingeniería de sistemas de información, la ingeniería de software, ingeniería de datos, inteligencia artificial y la ingeniería de redes y comunicaciones.</li>
+        </div>
+      </div> 
+    </div>    
+       
+    <div id="Aptitudes">
+      <h2 id="Experiencia_titulo">APTITUDES</h2>
+
+      <div id="Experiencia_1" class="experiencia_css">
+       
+        <div id="c1">
+          <h4 id="c1_h"> Adaptabilidad</h4>
+          <h4 id="c1_h">Trabajo en equipo</h4>
+          <h4 id="c1_h">Creatividad</h4>
+          <h4 id="c1_h">Resolución de problemas</h4>
+        </div>
+       
+        <div id="c2">
+          <h4 id="c2_h">Liderazgo</h4>
+          <h4 id="c2_h">Organización</h4>
+          <h4 id="c2_h">Idiomas Inglés</h4>
+          <h4 id="c2_h">Responsabilidad </h4>
+          
+        </div>
+        
+      </div>
+    </div>
+    <br> 
+    <div id="Contacto">
+      <h2 id="Experiencia_titulo">CONTACTO</h2>
+      <form action="#" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+      
+        <input type="button" value="Enviar" onclick="alert('Formulario enviado con éxito!')">
+      </form>
+    </div>
+ <br>
+ <br>
+ <br>
+  </div>    
 <script src="./api_random.js"></script>
 </body>
 </html>
