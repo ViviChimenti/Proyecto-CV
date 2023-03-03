@@ -7,15 +7,16 @@ body {
   padding: 0;
 }
 
-#Principal{
-  background-color: #f1f1f1; /*blanco celeste 
+#Principal {
+  background-color: #f1f1f1;
 }
 
-#cajaNombre{
-  background-color: rgb(248, 244, 9); /*blanco celeste*/
-}
 
-#Nombre{
+/* /* #cajaNombre{
+  background-color: rgb(248, 244, 9);} /*blanco celeste*/
+ 
+
+#Nombre {
   box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
   display:flex;
   justify-content: left; 
@@ -28,54 +29,56 @@ body {
   font-weight: bold;
 }
 
-#div_header{
+#div_header {
   display:flex;
   margin: auto;
   font-family: Arial, sans-serif;
   color: #182153;
 }
 
-#imagen_div{
+#imagen_div {
   box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
   /* display: flex; */  
   justify-content: center;
   background-color: #182153;
 } 
 
-#user-info{
-  background-color: #0f1534; /*azul*/
+/* #user-info{
+  background-color: #0f1534;    ESTO FUNCIONA BIEN LO MUTEO PARA PROBAR OTRA COSA
   display: flex;  
   justify-content: center;
   
-}
+} */
 
-#foto{
+
+
+#foto { 
   height: 470px;
   width: 470px;
 }
 
-#info_div{
+#info_div {
   background-color: #f1f1f1;
   box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
   height: 470px;
   width: 470px;
 }
 
-#texto{
+#texto {
   font-family: sans-serif;
   font-size: 14px;
   margin: 50px;
 }
 
 
-.class-Nombre{
+.class-Nombre {
   font-family: sans-serif;
   font-size: 30px;
   font-weight: bold;
 }
 
 
-.icon-container{
+.icon-container {
   text-align: center;
   background-color:#182153;
   width: 50%;
@@ -84,16 +87,16 @@ body {
   width: 940px;  
 }
 
-#cajaIconos{
+#cajaIconos {
   background-color: #f1f1f1;
 }
 
-a{
+a {
   color: #182153;
   margin: 10px;
 }
 
-#cajaSaludo{
+#cajaSaludo {
   background-color: #f1f1f1; 
   margin: 3%;
 }
@@ -230,5 +233,36 @@ input[type="submit"]:hover {
 #Contacto{
   background-color:#182153;
 }
+/* -------------------------------------------- */
 
+.background-image {
+  position: relative;
+  
+}
+
+.background-image img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(116, 110, 173, 0.521); /* Opacidad del fondo */
+  color: #000000; /* Color del texto */
+  width: 100%;
+  font-weight: bold;
+}
+
+.overlay img {
+  width: 30%;
+  margin-left: 50px;
+  opacity: 0.7;
+  
+}
+
+.overlay h1,
+.overlay p {
+  font-size: 2rem;
+}
 
